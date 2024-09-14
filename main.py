@@ -2,6 +2,7 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.core.window import Window
 from kivy.utils import platform
+from kivy.lang.builder import Builder
 
 
 import json
@@ -17,7 +18,11 @@ class CalculadoraImpresionApp(App):
     #Window.size = (1200, 600)  # Ajusta estos valores según tus preferencias
     
     def build(self):
+        return Builder.load_file('CalculadoraImpresion.kv')
         self.icon = '3dPrintCalc.ico'
+        
+        
+    def on_start(self):
         # Ejecutar la función obtener_cotizacion_dolar al iniciar la app
         self.obtener_cotizacion_dolar()
 

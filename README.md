@@ -22,7 +22,7 @@ Rellenar cada campo segun sea necesario.
 - Descargar el codigo en zip.
 - Descomprimir en una carpeta.
 - Abrir una linea de comandos CMD desde esta carpeta
-- intalar todas las dependencias con: pip install -r requirements.txt
+- intalar todas las dependencias con: pip install -r requirements.txt o sudo pip3 install -r requirements.txt
 - Ejecutar el archivo 3dPrintCalc.bat en windows o 3dPrintCalc.sh desde linux
 
 
