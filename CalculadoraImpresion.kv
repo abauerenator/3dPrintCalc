@@ -1,0 +1,227 @@
+#:kivy 2.2.1
+
+<MyLabel@Label>:
+    halign: 'center'
+    valign: 'middle'
+    text_size: self.size
+    size_hint_x: 0.5
+
+<CalculadoraImpresionApp>:
+BoxLayout:
+    orientation: 'vertical'
+    
+    Label:
+        id: dolar_hoy_label
+        text: ''
+        font_size: 15
+        size_hint_y: None
+        height: '48dp'
+
+    GridLayout:
+        cols: 5
+        spacing: '10dp'
+        padding: '10dp'
+        row_default_height: '40dp'  # Establece la
+         
+                
+        MyLabel:
+            text: 'Costo del Material por kilo:'
+            size_hint_x: 0.5            
+        TextInput:
+            id: material_cost_input
+            size_hint_x: 0.5
+                
+
+        MyLabel:
+            text: 'Material (gramos):'
+            size_hint_x: 0.5        
+        TextInput:
+            id: material_input
+            size_hint_x: 0.5
+
+        
+        MyLabel:
+            id: costo_material_total
+            text: ''
+            size_hint_x: 0.5        
+         
+        MyLabel:
+            text: ' % de Material extra (para compenzar Fallos):'
+            size_hint_x: 0.5
+        TextInput:
+            id: extra_material_input
+            size_hint_x: 0.5
+
+
+               
+        MyLabel:
+            text: 'Horas de Impresión:'
+            size_hint_x: 0.5
+        TextInput:
+            id: tiempo_input
+            size_hint_x: 0.5
+              
+               
+        MyLabel:
+            text: ''
+            size_hint_x: 0.5        
+            
+            
+        
+        
+        MyLabel:
+            text: 'Consumo watts impres.:'
+            size_hint_x: 0.5
+        TextInput:
+            id: consumo_w_input
+            size_hint_x: 0.5
+                
+        
+        MyLabel:
+            text: 'Costo del KW/h:'
+            size_hint_x: 0.5
+        TextInput:
+            id: costo_kw_input
+            size_hint_x: 0.5
+
+        MyLabel:
+            text: ''
+            size_hint_x: 0.5        
+            id: costo_electricidad_total
+
+        
+        MyLabel:
+            text:'Tiempo de mano de obra en horas:'
+            size_hint_x: 0.5
+        TextInput:
+            id: mano_obra_input
+            size_hint_x: 0.5
+       
+
+        MyLabel:
+            text:'Costo de mano de obra por hora:'
+            size_hint_x: 0.5
+        TextInput:
+            id: costo_mano_obra_input
+            size_hint_x: 0.5
+
+        MyLabel:
+            text: ''
+            size_hint_x: 0.5        
+            id: costo_mano_de_obra_total
+            
+        
+        MyLabel:
+            text:'Costo de adquisición de la impresora:'
+            size_hint_x: 0.5         
+        TextInput:
+            id: costo_adquisicion_input
+            size_hint_x: 0.5
+            
+       
+        MyLabel:
+            text:'Vida útil estimada de la impresora en años:'
+            size_hint_x: 0.5
+        TextInput:
+            id: vida_util_input
+            size_hint_x: 0.5
+        MyLabel:
+            text: ''
+            size_hint_x: 0.5        
+            id: costo_amortizacion_total
+
+
+
+
+
+        MyLabel:
+            text:'Valor residual de la impresora al final de su vida útil:'
+            size_hint_x: 0.5
+        TextInput:
+            id: valor_residual_input
+            size_hint_x: 0.5
+            
+
+        MyLabel:
+            text:'Costos de mantenimiento anuales:'
+            size_hint_x: 0.5
+        TextInput:
+            id: costo_mantenimiento_input
+            size_hint_x: 0.5
+        MyLabel:
+            text: ''
+            size_hint_x: 0.5        
+            
+            
+
+        MyLabel:
+            text:'Porcentaje de ganancia:'
+            size_hint_x: 0.5
+        TextInput:
+            id: porcentaje_ganacia_input
+            size_hint_x: 0.5
+
+        MyLabel:
+            text:'Impuestos y comisiones %:'
+            size_hint_x: 0.5
+        TextInput:
+            id: porcentaje_iva_input
+            size_hint_x: 0.5
+
+        MyLabel:
+            id: total_impuestos_input
+            text: ''
+            size_hint_x: 0.5        
+            
+
+
+        MyLabel:
+            text:'costo embalaje:'
+            size_hint_x: 0.5
+        TextInput:
+            id: costo_embalaje_input
+            size_hint_x: 0.5
+
+        MyLabel:
+            text:'costo envio:'
+            size_hint_x: 0.5
+        TextInput:
+            id: costo_envio_input
+            size_hint_x: 0.5
+        MyLabel:
+            text: ''
+            size_hint_x: 0.5        
+            id: costo_envio_total
+                    
+        
+        Button:
+            text: 'Calcular'
+            on_press: app.calcular_costo()
+
+        
+        MyLabel:
+            id: resultado_label
+            text: ''
+            size_hint_y: None
+            height: '48dp'  # Establece la altura deseada para el resultado_label
+            font_size: 15
+
+        MyLabel:
+            id: ganancia_label
+            text: ''
+            size_hint_y: None
+            height: '48dp'  # Establece la altura deseada para el resultado_label
+            font_size: 15
+        
+        MyLabel:
+            id: precio_final_label
+            text: ''
+            size_hint_y: None
+            height: '48dp'  # Establece la altura deseada para el resultado_label
+            font_size: 15
+
+            
+
+    
+    
+
