@@ -15,9 +15,9 @@ Permission.READ_EXTERNAL_STORAGE])
 
 class CalculadoraImpresionApp(App):
     #Window.size = (1200, 600)  # Ajusta estos valores según tus preferencias
-    dolarhoy = 1  # Variable para almacenar la cotización del dólar
+    
     def build(self):
-        self.icon = 'myicon.png'
+        self.icon = '3dPrintCalc.ico'
         # Ejecutar la función obtener_cotizacion_dolar al iniciar la app
         self.obtener_cotizacion_dolar()
 
