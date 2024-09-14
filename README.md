@@ -12,6 +12,9 @@ Rellenar cada campo segun sea necesario.
 - impuestos.
 - costos de embalaje.
 - costos de envio.
+- En el resultado obtenemos costo total de manofactura
+- Ganacia neta
+- Precio de venta, con y sin impuestos.
 
 ![Screenshot 2024-09-13 214338](https://github.com/user-attachments/assets/a8bb2f8f-5896-4ab6-bd74-acecf55bc57d)
 
