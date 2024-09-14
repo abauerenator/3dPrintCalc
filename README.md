@@ -1,8 +1,8 @@
 # 3dPrintCalc
 Very simple Python script to calculate 3D printing cost and final price.
-![Screenshot 2024-09-13 210141](https://github.com/user-attachments/assets/7454ef50-43bd-45f0-a2d3-10f4bf78e060)
 
-# Como usar: 
--Descargar el codigo en zip
--Descomprimir en una carpeta 
--Ejecutar el archivo 3dPrintCalc.bat
+# Como usar: ![Screenshot 2024-09-13 214338](https://github.com/user-attachments/assets/a8bb2f8f-5896-4ab6-bd74-acecf55bc57d)
+
+-Descargar el codigo en zip.
+-Descomprimir en una carpeta.
+-Ejecutar el archivo 3dPrintCalc.bat.
