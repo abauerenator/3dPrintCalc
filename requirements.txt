@@ -11,6 +11,6 @@ Pygments==2.18.0
 pypiwin32==223
 pywin32==306
 requests==2.32.3
-urllib3==2.6.3
+urllib3==2.7.0
 
 
